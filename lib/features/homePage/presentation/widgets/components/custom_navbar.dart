@@ -51,46 +51,44 @@ class CustomNavBar extends StatelessWidget {
                   ),
                   child: Text(
                     'ARTHUR A/C',
-                    style: GoogleFonts.inter(
-                      textStyle: TextStyle(
-                        color: const Color(0xFFFCFCFC),
-                        fontSize: ResponsiveValue(context,
-                            defaultValue: 48.0,
-                            valueWhen: [
-                              const Condition.smallerThan(
-                                name: TABLET,
-                                value: 40.0,
-                              ),
-                              const Condition.smallerThan(
-                                name: 'm600',
-                                value: 30.0,
-                              ),
-                            ]).value,
-                        fontWeight: FontWeight.w400,
-                        height: 0.5,
-                      ),
+                    style: TextStyle(
+                      fontFamily: "StretchPro",
+                      color: const Color(0xFFFCFCFC),
+                      fontSize: ResponsiveValue(context,
+                          defaultValue: 48.0,
+                          valueWhen: [
+                            const Condition.smallerThan(
+                              name: TABLET,
+                              value: 40.0,
+                            ),
+                            const Condition.smallerThan(
+                              name: 'm600',
+                              value: 30.0,
+                            ),
+                          ]).value,
+                      fontWeight: FontWeight.w400,
+                      height: 0.5,
                     ),
                   ),
                 ),
                 Text(
                   'Heating & Cooling',
-                  style: GoogleFonts.inter(
-                    textStyle: TextStyle(
-                      color: const Color(0xFFFCFCFC),
-                      fontSize: ResponsiveValue(context,
-                          defaultValue: 20.0,
-                          valueWhen: [
-                            const Condition.smallerThan(
-                              name: TABLET,
-                              value: 16.0,
-                            ),
-                            const Condition.smallerThan(
-                              name: 'm600',
-                              value: 13.0,
-                            ),
-                          ]).value,
-                      fontWeight: FontWeight.w400,
-                    ),
+                  style: TextStyle(
+                    fontFamily: "StretchPro",
+                    color: const Color(0xFFFCFCFC),
+                    fontSize: ResponsiveValue(context,
+                        defaultValue: 20.0,
+                        valueWhen: [
+                          const Condition.smallerThan(
+                            name: TABLET,
+                            value: 16.0,
+                          ),
+                          const Condition.smallerThan(
+                            name: 'm600',
+                            value: 13.0,
+                          ),
+                        ]).value,
+                    fontWeight: FontWeight.w400,
                   ),
                 )
               ],
